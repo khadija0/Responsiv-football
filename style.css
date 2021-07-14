@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/* margin padding 0 */
 .head{
    background-color: blue;
 }
-.login{
-    
-}
+/* background color change */
 .button{
     background-color: palevioletred;
     color: cornsilk;
@@ -17,27 +17,28 @@
     right: 200px;
     top: 30px;
     font-size: 1em;
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
+/* login button design */
 .button2{
     background-color: palevioletred;
     color: cornsilk;
-    padding: 10px 10px;
+    padding: 15px 30px;
     font-weight: 600;
     position: absolute;
     font-size: 1em;
     text-decoration: none;
     transition: transform 2s;
 }
+/* watch button design */
 .banner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: transform 6s ease;background-color: blue;
     padding: 100px 200px;
-    p
 }
+/* banner part */
 .banner-left h1{
     font-weight: bold;
     font-size: 64px;
@@ -46,7 +47,9 @@
 }
 .banner:hover .banner-left .button2{
     transform: translate(100px, 0px);
+    background-color: indianred;
 }
+/* create an animation */
 .banner-right img{
     width: 556px;
     height: 438px;
@@ -57,12 +60,11 @@
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     padding: 0px 180px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 .player{
     padding: 15px;
     padding-bottom: 35px;
-    justify-content: center;
     box-shadow: 1px 1px 10px gray;
     border-radius: 5px;
     margin-top: 80px;
@@ -79,13 +81,57 @@
 p{
     font-size: 20px;
 }
-@media only screen and (max-width: 688px){
+/* player box design0 */
+.match{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 200px;
+}
+.left{
+    margin-top: 200px;
+}
+.half-width img{
+    width: 600px;
+    height: 450px;
+    margin-top: 130px;
+}
+.half-width h1{
+    font-weight: 700;
+    font-size: 50px;
+}
+.half-width p{
+    color: grey;
+    padding-right: 120px;
+}
+.logo img{
+    margin-top: 50px;
+    width: 483px;
+    height: 110px;
+    margin-bottom: 10px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.fab{
+    color: grey;
+    font-size: 20px; 
+    margin-left: 20px
+
+}
+
+
+@media only screen and (max-width: 600px){
 
     .button .fa-align-left{
-    c
+        display: block;
+    
     }
     .button2 .fas-align-left{
-        align-left
+        display: block;
+        
     }
     .banner{
         flex-direction: column;
@@ -97,11 +143,35 @@ p{
         margin-bottom: 30px;
     }
     .banner-right #size{
+        margin-top: 20px;
         width: 300px;
         height: 250px;
     }
     .player-list{
-        display: flex;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px 15px;
     }
+    .player{
+        padding: 10px 10px;
+    }
+    .match{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 2px;
+    }
+    .half-width{
+        font-size: 20px;
+    }
+    .half-width img{
+        width: 350px;
+        height: 300px;
+    }
+    .left{
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .half-width p{
+        color: grey;
+        padding-right: 0px;
+}
 }
